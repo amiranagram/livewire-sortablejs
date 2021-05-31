@@ -1,0 +1,46 @@
+{
+  "name": "livewire-sortablejs",
+  "version": "0.1.0",
+  "description": "A Livewire wrapper for SortableJS.",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d dist --minified",
+    "watch": "babel src -d dist --watch",
+    "lint": "eslint src tests --fix",
+    "test": "jest --verbose",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiranagram/livewire-sortablejs.git"
+  },
+  "keywords": [
+    "livewire",
+    "sortable",
+    "sortablejs"
+  ],
+  "author": "Amir Rami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amiranagram/livewire-sortablejs/issues"
+  },
+  "homepage": "https://github.com/amiranagram/livewire-sortablejs#readme",
+  "dependencies": {
+    "sortablejs": "^1.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/runtime": "^7.14.0",
+    "eslint": "^7.1.0",
+    "jest": "^27.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.js"
+    ]
+  }
+}

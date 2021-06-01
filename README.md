@@ -36,7 +36,7 @@ A simple list of tasks in your component view.
 An update method in your component class.
 
 ```php
-public $items;
+public $tasks;
 
 public function mount()
 {

@@ -20,7 +20,7 @@ A simple list of tasks in your component view.
         wire:sortable.animation="150"
         class="divide-y divide-gray-200"
     >
-        @foreach(Task::all() as $task)
+        @foreach($tasks as $task)
             <li wire:sortable.item="{{ $task->id }}">
                 <a href="#" class="block hover:bg-gray-50">
                     <div class="flex items-center px-4 py-4 sm:px-6">
@@ -36,12 +36,21 @@ A simple list of tasks in your component view.
 An update method in your component class.
 
 ```php
+public $items;
+
+public function mount()
+{
+    $this->tasks = Task::orderBy('order')->get();
+}
+    
 public function updateTaskOrder($list)
 {
     foreach($list as $item) {
         Task::where('id', $item['value'])
-            ->update(['order' => $item['order']);
+            ->update(['order' => $item['order']]);
     }
+    
+    $this->tasks = Task::orderBy('order')->get();
 }
 ```
 

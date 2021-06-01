@@ -54,7 +54,7 @@ public function updateTaskOrder($list)
 }
 ```
 
-##Support me
+## Support me
 
 <a href="https://www.buymeacoffee.com/amirami" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
@@ -62,15 +62,15 @@ I invest a lot of time writing quality software, what open-source market deserve
 
 Where I live I'm currently unable to apply for GitHub sponsorship. I was able to set up a Buy Me a Coffee account though. That's where you can show appreciation for my dedicated time to writing this package.
 
-##Installation
+## Installation
 
-###CDN
+### CDN
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/livewire-sortablejs@0.x.x/dist/index.js"></script>
 ```
 
-###NPM
+### NPM
 
 ```bash
 npm install livewire-sortablejs
@@ -90,7 +90,7 @@ import 'livewire-sortablejs'
 require('livewire-sortablejs')
 ```
 
-##Usage
+## Usage
 
 ## Changelog
 

@@ -67,7 +67,7 @@ Where I live I'm currently unable to apply for GitHub sponsorship. I was able to
 ### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/livewire-sortablejs@0.x.x/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/livewire-sortablejs@0.x.x/dist/livewire-sortable.min.js"></script>
 ```
 
 ### NPM

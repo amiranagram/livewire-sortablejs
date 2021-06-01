@@ -1,46 +1,48 @@
 {
-  "name": "livewire-sortablejs",
-  "version": "0.1.0",
-  "description": "A Livewire wrapper for SortableJS.",
-  "main": "dist/index.js",
-  "jsnext:main": "src/index.js",
-  "scripts": {
-    "build": "babel src -d dist --minified",
-    "watch": "babel src -d dist --watch",
-    "lint": "eslint src tests --fix",
-    "test": "jest --verbose",
-    "prepare": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amiranagram/livewire-sortablejs.git"
-  },
-  "keywords": [
-    "livewire",
-    "sortable",
-    "sortablejs"
-  ],
-  "author": "Amir Rami",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amiranagram/livewire-sortablejs/issues"
-  },
-  "homepage": "https://github.com/amiranagram/livewire-sortablejs#readme",
-  "dependencies": {
-    "sortablejs": "^1.13.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.14.3",
-    "@babel/core": "^7.14.3",
-    "@babel/plugin-transform-runtime": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
-    "@babel/runtime": "^7.14.0",
-    "eslint": "^7.1.0",
-    "jest": "^27.0.0"
-  },
-  "jest": {
-    "testMatch": [
-      "**/tests/**/*.js"
-    ]
-  }
+    "name": "livewire-sortablejs",
+    "version": "0.1.0",
+    "description": "A Livewire wrapper for SortableJS.",
+    "main": "dist/livewire-sortable.js",
+    "scripts": {
+        "watch": "npx rollup -c -w",
+        "build": "npx rollup -c",
+        "lint": "eslint src tests --fix",
+        "test": "jest --verbose",
+        "prepare": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amiranagram/livewire-sortablejs.git"
+    },
+    "keywords": [
+        "livewire",
+        "sortable",
+        "sortablejs"
+    ],
+    "author": "Amir Rami",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/amiranagram/livewire-sortablejs/issues"
+    },
+    "homepage": "https://github.com/amiranagram/livewire-sortablejs#readme",
+    "dependencies": {
+        "sortablejs": "^1.13.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/preset-env": "^7.14.4",
+        "@rollup/plugin-babel": "^5.3.0",
+        "@rollup/plugin-commonjs": "^19.0.0",
+        "@rollup/plugin-node-resolve": "^13.0.0",
+        "eslint": "^7.1.0",
+        "jest": "^27.0.0",
+        "rollup": "^2.50.5",
+        "rollup-plugin-filesize": "^9.1.1",
+        "rollup-plugin-terser": "^7.0.2"
+    },
+    "jest": {
+        "testMatch": [
+            "**/tests/**/*.js"
+        ]
+    }
 }

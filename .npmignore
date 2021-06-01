@@ -1,0 +1,10 @@
+/.idea
+/.github
+/demo
+/node_modules
+/tests
+.editorconfig
+.eslintrc
+npm-debug.log
+rollup.config.js
+yarn.lock

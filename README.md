@@ -9,6 +9,8 @@ A Livewire wrapper for [SortableJS](https://github.com/SortableJS/Sortable).
 
 ---
 
+![](demo/assets/example-1.gif)
+
 A simple list of tasks in your component view.
 
 ```html

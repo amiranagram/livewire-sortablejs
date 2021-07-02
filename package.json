@@ -1,6 +1,6 @@
 {
     "name": "livewire-sortablejs",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A Livewire wrapper for SortableJS.",
     "main": "dist/livewire-sortable.js",
     "scripts": {
